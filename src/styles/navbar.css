@@ -42,6 +42,7 @@ h5 {
 .navContainer .sideBarBtn {
 	margin: 0 20px;
 	cursor: pointer;
+	height: 100%;
 }
 .navContainer .sideBarBtn i {
 	color: var(--white) !important;

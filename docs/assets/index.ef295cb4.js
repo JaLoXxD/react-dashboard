@@ -7875,11 +7875,11 @@ const np = () =>
 							children: [
 								c("div", {
 									className: "sideBarBtn",
+									ref: g,
 									children: c("i", {
 										onClick: () => {
 											h();
 										},
-										ref: g,
 										className: "fa-solid fa-bars",
 									}),
 								}),

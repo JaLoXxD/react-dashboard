@@ -76,12 +76,11 @@ export const Navbar = ({ onOpenSlideBar }) => {
 					</div>
 				</div>
 				<div className="leftContent">
-					<div className="sideBarBtn">
+					<div className="sideBarBtn" ref={buttonRef}>
 						<i
 							onClick={() => {
 								handleSlideBar();
 							}}
-							ref={buttonRef}
 							className="fa-solid fa-bars"></i>
 					</div>
 					<ul className="menuOptions">
