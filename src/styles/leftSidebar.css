@@ -1,0 +1,64 @@
+#leftSidebarContainer {
+	position: absolute;
+	width: 250px;
+	overflow: hidden;
+	height: calc(100% - 60px);
+	background-color: var(--white);
+	transition: all 0.4s ease-in-out;
+	z-index: 900;
+	box-shadow: var(--customBoxShadow);
+}
+
+#leftSidebarContainer textarea {
+	overflow-y: scroll;
+	width: 100%;
+}
+
+#leftSidebarContainer input[type="date"] {
+	width: 100%;
+	padding: 5px;
+	margin: 5px 0 15px;
+}
+
+#leftSidebarContainer select {
+	width: 100%;
+	padding: 5px;
+	margin-top: 5px;
+}
+
+#leftSidebarContainer .wrapper {
+	padding: 10px 0;
+}
+#leftSidebarContainer .wrapper .customCheckbox {
+	display: flex;
+	padding: 2px 15px;
+	margin: 10px 0;
+}
+#leftSidebarContainer .wrapper .customCheckbox label {
+	font-size: 12px;
+	margin-left: 4px;
+}
+#leftSidebarContainer .wrapper li.mainTitle {
+	font-size: 16px;
+	font-weight: 700;
+	text-align: start;
+}
+#leftSidebarContainer .wrapper li.subTitle {
+	font-size: 14px;
+	font-weight: 500;
+	text-align: start;
+}
+#leftSidebarContainer .wrapper li {
+	padding: 2px 15px;
+}
+.hideSlidebar {
+	transform: translateX(-250px);
+}
+@media screen and (max-width: 880px) {
+	#leftSidebarContainer {
+		width: 100%;
+	}
+	.hideSlidebar {
+		transform: translateX(-100%);
+	}
+}

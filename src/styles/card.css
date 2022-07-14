@@ -1,0 +1,66 @@
+.customCard {
+	display: flex;
+	background-color: var(--white);
+	border: 2px solid var(--lightGray2);
+	padding: 10px;
+	width: calc(20% - 30px);
+	justify-content: space-between;
+	transition: all 0.3s ease-in-out;
+	cursor: default;
+}
+
+.customCard:hover {
+	transform: translateY(-5px);
+}
+
+.customCard img {
+	width: 50px;
+	height: 50px;
+}
+
+.customCard .cardContent {
+	text-align: end;
+	color: var(--headColor);
+}
+
+.customCard .cardContent span {
+	font-size: 24px;
+	font-weight: 700;
+}
+
+.customCard .cardContent p {
+	margin: 0;
+	font-size: 20px;
+}
+
+.cardsRow {
+	display: flex;
+	margin: 20px 0;
+	gap: 30px;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+@media screen and (max-width: 1300px) {
+	.customCard {
+		width: calc(30% - 30px);
+	}
+	.cardsRow{
+		justify-content: flex-start;
+	}
+}
+
+@media screen and (max-width: 940px) {
+	.customCard {
+		width: 250px;
+	}
+	.cardsRow{
+		justify-content: center;
+	}
+}
+
+@media screen and (max-width: 650px) {
+	.customCard {
+		width: 100%;
+	}
+}

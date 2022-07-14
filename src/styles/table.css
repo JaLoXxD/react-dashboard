@@ -1,0 +1,73 @@
+.tableContainer {
+	overflow: auto;
+}
+#shipmentsTable {
+	text-align: start;
+	font-size: 14px;
+	border-spacing: 0;
+	width: 100%;
+	border-collapse: collapse;
+}
+#shipmentsTable thead {
+	background-color: var(--customCyan);
+	font-size: 18px;
+}
+#shipmentsTable thead th {
+	text-align: start;
+	padding: 20px 20px 20px 5px;
+}
+#shipmentsTable thead th:last-child {
+	text-align: end;
+}
+#shipmentsTable tbody tr {
+	background-color: var(--white);
+	border-bottom: 4px solid #c8c8c8;
+}
+#shipmentsTable .tableSubtitle {
+	font-weight: 600;
+	font-size: 16px;
+	color: var(--customGray);
+}
+#shipmentsTable td:last-child .tableSubtitle {
+	text-align: end;
+}
+#shipmentsTable td {
+	color: var(--customGray);
+	padding: 20px 20px 20px 5px;
+	vertical-align: baseline;
+	min-width: 200px;
+}
+#shipmentsTable td p:not(.tableSubtitle) {
+	margin-bottom: 5px;
+}
+#shipmentsTable td .shipmentCost {
+	font-size: 18px;
+	color: var(--purple);
+	font-weight: 700;
+	text-align: end;
+}
+#shipmentsTable td button {
+	border: 1px solid var(--purple);
+	color: var(--purple);
+	background-color: transparent;
+	font-size: 16px;
+	padding: 5px 25px;
+	border-radius: 5px;
+	margin-top: 20px;
+	cursor: pointer;
+	transition: all 0.4s ease-in-out;
+}
+
+#shipmentsTable td button:hover {
+	background-color: var(--purple);
+	color: var(--white);
+}
+#shipmentsTable td:last-child {
+	text-align: end;
+}
+#shipmentsTable tbody tr:hover {
+	background-color: var(--white2);
+}
+#shipmentsTable tbody tr td .approved {
+	color: var(--successGreen);
+}

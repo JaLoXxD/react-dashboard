@@ -1,0 +1,18 @@
+:root {
+	--customGray: rgb(56, 65, 74);
+	--lightGray: rgb(70, 78, 87);
+	--lightGray2: rgb(129, 125, 125);
+	--white: rgb(255, 255, 255);
+	--white2: rgba(255, 255, 255, 0.6);
+	--white3: rgba(255, 255, 255, 0.3);
+	--customRed: rgb(216, 39, 39);
+	--customBoxShadow: 0px 0px 35px 0px rgb(154 161 171 / 15%);
+	--customLinkColor: rgb(108 117 125);
+	--dividerColor: rgb(247 247 247);
+	--purple: rgb(102, 88, 221);
+	--purpleHover: rgb(71 62 155);
+	--activeBg: rgb(243 247 249);
+	--headColor: rgb(52 58 64);
+	--customCyan: rgb(38, 144, 186);
+	--successGreen: rgb(18, 223, 168);
+}

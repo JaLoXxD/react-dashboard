@@ -1,0 +1,43 @@
+const shipmentsInfo = [
+	{
+		number: 123456,
+		billNumber: 323232,
+		status: "NEW",
+		origin: "(937) 962-2374 818 N Commerce St Lewisburg, Ohio(OH), 45338",
+		provider: "CH ROBHINSON",
+		expectedDate: "11/18/2022",
+		destination: "(607) 273-4469 116 Cook St Ithaca, New York(NY), 14850",
+		terms: "Prepaid",
+		weight: 6565,
+		quantity: 15,
+		cost: 1500.25,
+	},
+	{
+		number: 123456,
+		billNumber: 323232,
+		status: "NEW",
+		origin: "(937) 962-2374 818 N Commerce St Lewisburg, Ohio(OH), 45338",
+		provider: "CH ROBHINSON",
+		expectedDate: "11/18/2022",
+		destination: "(607) 273-4469 116 Cook St Ithaca, New York(NY), 14850",
+		terms: "Prepaid",
+		weight: 6565,
+		quantity: 15,
+		cost: 1500.25,
+	},
+	{
+		number: 123456,
+		billNumber: 323232,
+		status: "NEW",
+		origin: "(937) 962-2374 818 N Commerce St Lewisburg, Ohio(OH), 45338",
+		provider: "CH ROBHINSON",
+		expectedDate: "11/18/2022",
+		destination: "(607) 273-4469 116 Cook St Ithaca, New York(NY), 14850",
+		terms: "Prepaid",
+		weight: 6565,
+		quantity: 15,
+		cost: 1500.25,
+	},
+];
+
+export { shipmentsInfo };
