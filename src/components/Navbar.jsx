@@ -44,8 +44,10 @@ export const Navbar = ({ onOpenSlideBar }) => {
 				setMenu("");
 			}
 		};
+		document.body.addEventListener("touchstart", closeMenu);
 		document.body.addEventListener("click", closeMenu);
 		return () => {
+			document.body.removeEventListener("touchstart", closeMenu);
 			document.body.removeEventListener("click", closeMenu);
 		};
 	}, [menu, slideBar]);
