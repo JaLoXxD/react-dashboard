@@ -3,6 +3,11 @@
 	margin: 0;
 	text-align: start;
 	padding: 0;
+	-webkit-appearance: none !important;
+}
+
+input {
+	-webkit-appearance: none !important;
 }
 
 .App {
@@ -61,6 +66,6 @@ button {
 }
 @media screen and (max-width: 880px) {
 	.container.openSlidebar {
-	width: 100%;
-}
+		width: 100%;
+	}
 }
