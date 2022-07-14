@@ -1,4 +1,4 @@
-import { useState, useRef, useEffect } from "react";
+import { useState, useRef, useLayoutEffect } from "react";
 import bigLogo from "../assets/images/headLogo.png";
 import profilePhoto from "../assets/images/profilePhoto.jpg";
 import { LeftSidebar } from "./LeftSidebar";
@@ -27,7 +27,7 @@ export const Navbar = ({ onOpenSlideBar }) => {
 			setSlideBar(!slideBar);
 		}
 	};
-	useEffect(() => {
+	useLayoutEffect(() => {
 		const closeMenu = (e) => {
 			if (!e.path.includes(leftMenuRef.current) && !e.path.includes(buttonRef.current)) {
 				setSlideBar(false);
