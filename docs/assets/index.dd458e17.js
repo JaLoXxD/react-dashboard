@@ -7876,12 +7876,10 @@ const np = () =>
 								c("div", {
 									className: "sideBarBtn",
 									ref: g,
-									children: c("i", {
-										onClick: () => {
-											h();
-										},
-										className: "fa-solid fa-bars",
-									}),
+									onTouchStart: () => {
+										h();
+									},
+									children: c("i", { className: "fa-solid fa-bars" }),
 								}),
 								y("ul", {
 									className: "menuOptions",

@@ -76,12 +76,13 @@ export const Navbar = ({ onOpenSlideBar }) => {
 					</div>
 				</div>
 				<div className="leftContent">
-					<div className="sideBarBtn" ref={buttonRef}>
-						<i
-							onClick={() => {
-								handleSlideBar();
-							}}
-							className="fa-solid fa-bars"></i>
+					<div
+						className="sideBarBtn"
+						ref={buttonRef}
+						onTouchStart={() => {
+							handleSlideBar();
+						}}>
+						<i className="fa-solid fa-bars"></i>
 					</div>
 					<ul className="menuOptions">
 						<li id="customMenu" className={`option menuLink ${menu === "customMenu" && "showMenu"}`} onClick={() => handleMenu("customMenu")}>
