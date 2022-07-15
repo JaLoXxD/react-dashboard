@@ -7835,7 +7835,7 @@ const np = () =>
 			d = le.exports.useRef(),
 			g = le.exports.useRef(),
 			m = (x) => {
-				n === x ? t("") : (t(x), o(!i));
+				n === x ? t("") : (t(x), o(!1));
 			};
 		le.exports.useLayoutEffect(() => {
 			const x = (P) => {
@@ -7852,7 +7852,7 @@ const np = () =>
 			);
 		}, [n, i]);
 		const h = () => {
-				t("");
+				o(!i), t("");
 			},
 			w = document.querySelector("#root");
 		return y(Oe, {

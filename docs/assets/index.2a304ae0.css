@@ -49,6 +49,8 @@ button {
 	padding: 50px;
 	margin-left: auto;
 	transition: all 0.5s ease-in-out;
+	-moz-transition: all 0.5s ease-in-out;
+	-webkit-transition: all 0.5s ease-in-out;
 	transform-origin: 100%;
 }
 .container.openSlidebar {
@@ -731,6 +733,10 @@ a {
 	height: calc(100% - 60px);
 	background-color: var(--white);
 	transition: all 0.4s ease-in-out;
+	-webkit-transition: all 0.4s ease-in-out;
+	-moz-transition: all 0.4s ease-in-out;
+	-o-transition: all 0.4s ease-in-out;
+	-ms-transition: all 0.4s ease-in-out;
 	z-index: 900;
 	box-shadow: var(--customBoxShadow);
 }
@@ -775,6 +781,8 @@ a {
 }
 .hideSlidebar {
 	transform: translate(-250px);
+	-webkit-transform: translateX(-250px);
+	-moz-transform: translateX(-250px);
 }
 @media screen and (max-width: 880px) {
 	#leftSidebarContainer {
@@ -782,5 +790,7 @@ a {
 	}
 	.hideSlidebar {
 		transform: translate(-100%);
+		-webkit-transform: translateX(-100%);
+		-moz-transform: translateX(-100%);
 	}
 }

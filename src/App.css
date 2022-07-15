@@ -58,6 +58,8 @@ button {
 	padding: 50px;
 	margin-left: auto;
 	transition: all 0.5s ease-in-out;
+	-moz-transition: all 0.5s ease-in-out;
+	-webkit-transition: all 0.5s ease-in-out;
 	transform-origin: 100%;
 }
 

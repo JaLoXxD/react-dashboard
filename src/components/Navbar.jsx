@@ -24,7 +24,7 @@ export const Navbar = ({ onOpenSlideBar }) => {
 			setMenu("");
 		} else {
 			setMenu(val);
-			setSlideBar(!slideBar);
+			setSlideBar(false);
 		}
 	};
 	useLayoutEffect(() => {
@@ -52,7 +52,7 @@ export const Navbar = ({ onOpenSlideBar }) => {
 		};
 	}, [menu, slideBar]);
 	const handleSlideBar = () => {
-		//setSlideBar(!slideBar);
+		setSlideBar(!slideBar);
 		setMenu("");
 	};
 	const appContainer = document.querySelector("#root");
